@@ -1,0 +1,79 @@
+body {
+  background-color: #3668ff;
+  margin: 0px;
+}
+
+ul#myList, ul#sources {
+  padding: 2px 2px 45px 2px;
+}
+
+#category_buttons button {
+  font-family: 'Rajdhani', sans-serif;
+  padding: 5px;
+  background-color: #426ae2;
+  border: 1px solid #67a1f3;
+  margin: 1px;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+}
+
+ul#myList li, ul#sources li {
+  list-style-type: none;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  font-size: 18px;
+  padding : 5px;
+  border-bottom : 1px solid white;
+}
+
+ul#myList a {
+  text-decoration: none;
+  color: white
+}
+
+.logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
+  padding:5px;
+  border-bottom : 5px solid #0e2467;
+  color:white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,104,255,1) 50%, rgba(0,129,255,1) 100%);
+}
+
+.hide-item {
+  display: none;
+}
+
+#footer {
+    padding: 5px;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px #d8c8c8;
+    text-align: right;
+    bottom: 0px;
+    right: 5px;
+    position: fixed;
+    width: 100%;
+}
+
+#category_buttons {
+  text-align: center;
+  padding: 5px;
+}
+
+@media screen and (max-width : 480px){
+    #footer {
+      padding: 5px;
+      color: white;
+      font-family: 'Dancing Script', cursive;
+      text-shadow: 1px 1px #d8c8c8;
+      text-align: center;
+      bottom: 0px;
+      position: fixed;
+      width: 100%;
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,104,255,1) 50%, rgba(0,129,255,1) 100%);
+    }
+}
