@@ -1,7 +1,4 @@
   function generateDomElements(){
-    //    this.createLiTags = createLiTags;
-    //    this.createButtonTags = createButtonTags;
-
     var createLiTags = function (item){
         let ul = document.getElementById("myList");
         let txtnode = document.createTextNode(item.name);

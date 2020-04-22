@@ -1,5 +1,5 @@
 import generateDomElements from './generateDomElements';
-let apikey = 'cbbf845e87d94bfa99f0f1419fbe6b00';
+let apikey = 'your-api-key';
 let sources = `https://newsapi.org/v2/sources?apiKey=${apikey}`;
 let categories = new Set();
 let dataStore = [];
