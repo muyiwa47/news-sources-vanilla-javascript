@@ -1,6 +1,6 @@
 import generateDomElements from './generateDomElements';
-let apikey = 'your-api-key';
-let sources = `https://newsapi.org/v2/sources?apiKey=${apikey}`;
+const apiKey = '49e68def73af41b1927f24680bccc357';
+let sources = 'https://newsapi.org/v2/sources?apiKey='+ apiKey;
 let categories = new Set();
 let dataStore = [];
 let createDomStructure = new generateDomElements();
@@ -38,7 +38,7 @@ attachEventToButtons(){
 
   fetchData() {
     fetch(this.endpoints)
-    .then((response) => {
+      .then((response) => {
       return response.json();
     }).then((data) => {
         data.sources.forEach((item) => {
@@ -48,15 +48,15 @@ attachEventToButtons(){
     })
       return categories
     }).then((categories) => {
-      let arr = [...categories]
-      arr.forEach((category) => {
-          createDomStructure.createButtonTags(category);
-      })
+        let arr = [...categories]
+        arr.forEach((category) => {
+            createDomStructure.createButtonTags(category);
+        })
     }).then(() => {
-      this.attachEventToButtons()
+        this.attachEventToButtons()
     })
   }
 }
 
-let newsData = new getNewsApiData(sources, dataStore);
+let newsData = new getNewsApiData(sources);
 newsData.getSources;
